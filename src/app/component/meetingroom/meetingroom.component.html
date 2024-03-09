@@ -1,0 +1,55 @@
+<p>meetingroom works!</p>
+<div class="container">
+    <form class="meetingRoom">
+
+        <div>
+            <input class="meetingRoomName" type="text" name="Meeting Hall" placeholder="Meetinghall" (ngModel)="meetingRoom.name">
+        </div>
+
+        <div>
+            <label for="floorNumber">Choose the floor number:</label>
+            <select name="floorNumber" id="floorNumber"(ngModel)="meetingRoom.floorNumber">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        
+        <div>
+        <label for="capacity">Choose the capacity:</label>
+        <select name="capacity" id="capacity" (ngModel)="meetingRoom.capacity">
+            <option value="10">1000</option>
+            <option value="20">200<0/option>
+            <option value="50">500</option>
+            <option value="100">1000</option>
+        </select>
+       </div>
+
+         <div >
+              <input class="meetingRoomDate" type="date" name="Date Available"  placeholder="2024-03-03" (ngModel)="meetingRoom.date">
+          </div><br>
+
+         <div >
+            <input class="meetingRoomCost" type="number" name="Cost of Room"  placeholder="1000.0" (ngModel)="meetingRoom.costOfRoom">
+          </div><br>
+        
+          <div>
+          <p>Select the availability of the room:</p>
+            <input type="radio" id="availability-yes" name="Availability" value="Yes" (ngModel)="meetingRoom.isAvailable">
+            <label for="availability-yes">Yes</label><br>
+            <input type="radio" id="availability-no" name="Availability" value="No" (ngModel)="meetingRoom.isAvailable">
+            <label for="availability-no">No</label><br>
+        </div>
+
+        <div>
+        <label for="type">Choose the Hall:</label>
+        <select name="Category" id="type" (ngModel)="meetingRoom.type">
+            <option value="Birthday Party">Birthday Party</option>
+            <option value="Marriage">Get together</option>
+        </select>
+       </div>
+
+    
+    </form>
+    </div>
+    
